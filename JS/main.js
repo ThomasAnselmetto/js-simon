@@ -13,3 +13,21 @@
 //     Esiste un oggetto JS in grado di gestire le date ?
 //     Esistono dei metodi per trasformare una data in millisecondi ?
 
+
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minutesEl = document.getElementById("minutes");
+const secondsEl = document.getElementById("seconds");
+let seconds = 0
+MyInterval()
+
+const clock = setInterval(MyInterval, 1000);
+
+
+function MyInterval() {
+    if (seconds < 10) {
+        secondsEl.innerHTML = "0" + seconds;
+    } else
+
+        seconds++;
+};
